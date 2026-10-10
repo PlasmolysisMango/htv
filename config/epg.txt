@@ -1,3 +1,4 @@
 # 这是EPG订阅列表，用于生成M3U结果频道菜单信息
 # This is the EPG subscription list used to generate M3U result channel menu information
-http://e.erw.cc/e.xml.gz
+# 原 e.erw.cc 源不可达，已更换为 51zmt 节目单（已验证可达）
+http://epg.51zmt.top:8000/e.xml

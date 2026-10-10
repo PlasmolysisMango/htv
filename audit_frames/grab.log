@@ -1,0 +1,428 @@
+ffmpeg version N-126889-gb139ba11d8-20260926 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libxml2 --enable-libvmaf --disable-libxcb --disable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-vulkan --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --disable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 00000279a9d8fb00] Opening 'http://142.54.178.42:88/applive/mkt/segment_18487.ts' for reading
+[in#0 @ 00000279a9d8fb00] Opening 'http://142.54.178.42:88/applive/mkt/segment_18488.ts' for reading
+Input #0, hls, from 'http://47.97.252.137:8088/tvlive/cctv1hd.m3u8?node=10':
+  Duration: N/A, start: 89436.614856, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 89436.614856
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0](eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 89436.614856
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/47.97.252.137_8088.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 00000279abe0fec0] The specified filename 'audit_frames/47.97.252.137_8088.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 00000279abe0fec0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 00000279a9e58180] video:15KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=5.3 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0617x elapsed=0:00:00.64    
+ble-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 0000022994c939c0] Opening 'http://204.12.241.18:82/live/cctv1md/segment_13517.ts' for reading
+[in#0 @ 0000022994c939c0] Opening 'http://204.12.241.18:82/live/cctv1md/segment_13518.ts' for reading
+Input #0, hls, from 'http://198.204.228.26/live/cctv1hd.m3u8':
+  Duration: N/A, start: 39727.690411, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720, 25 fps, 25 tbr, 90k tbn, start 39727.690411
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 39727.690411
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/198.204.228.26.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0000022994d76dc0] The specified filename 'audit_frames/198.204.228.26.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0000022994d76dc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0000022994d75cc0] video:13KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.8 q=3.8 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0337x elapsed=0:00:01.18    
+bx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 0000021fe3f632c0] Opening 'http://63.141.250.98:82/live/cctv3md/segment_13517.ts' for reading
+[in#0 @ 0000021fe3f632c0] Opening 'http://63.141.250.98:82/live/cctv3md/segment_13518.ts' for reading
+Input #0, hls, from 'http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd':
+  Duration: N/A, start: 39727.689744, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720, 25 fps, 25 tbr, 90k tbn, start 39727.689744
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 39727.689744
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/63.141.230.178_82.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0000021fe611ac80] The specified filename 'audit_frames/63.141.230.178_82.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0000021fe611ac80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0000021fe4045a80] video:12KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=4.2 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0521x elapsed=0:00:00.76    
+xavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 0000022aefc95900] Opening 'http://192.187.98.98:82/live/cctv3md/segment_13517.ts' for reading
+[in#0 @ 0000022aefc95900] Opening 'http://192.187.98.98:82/live/cctv3md/segment_13518.ts' for reading
+Input #0, hls, from 'http://38.75.136.137:98/gslb/dsdqbv/cctv3hd.m3u8?auth=test20251009':
+  Duration: N/A, start: 39727.689744, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720, 25 fps, 25 tbr, 90k tbn, start 39727.689744
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 39727.689744
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/38.75.136.137_98.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0000022af1f320c0] The specified filename 'audit_frames/38.75.136.137_98.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0000022af1f320c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0000022aefd689c0] video:12KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=4.2 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0543x elapsed=0:00:00.73    
+e-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 00000259b8b705c0] Opening 'https://live-play-hls.cctvnews.cctv.com/CCTVChannel/live-play.cctvnews.cctv.com_channel_cctv4_mbd-1791649003635.ts?auth_key=1791702900-1-e24a948b07ac6ccf5f1b45aeef2f230a57a548971868befe13c684932fbde1fd-3de6bb4b7ad63b8c1e2fcd2f3594d735' for reading
+[in#0 @ 00000259b8b705c0] Opening 'https://live-play-hls.cctvnews.cctv.com/CCTVChannel/live-play.cctvnews.cctv.com_channel_cctv4_mbd-1791649009195.ts?auth_key=1791702900-1-e24a948b07ac6ccf5f1b45aeef2f230a57a548971868befe13c684932fbde1fd-d071905abb9a5e5bb40331dae45bf808' for reading
+Input #0, hls, from 'http://8.138.7.223/tv/cctvnews.php?id=cctv4':
+  Duration: N/A, start: 75516.429778, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 75516.429778
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 75516.429778
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/8.138.7.223.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, bt709, progressive), 320x180 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 00000259baf705c0] The specified filename 'audit_frames/8.138.7.223.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 00000259baf705c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 00000259b8c56ec0] video:6KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=3.6 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=87 drop=0 speed=0.731x elapsed=0:00:00.05    
+0
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 0000029516b0f340] Opening 'http://192.187.115.106:81/live/cctv4md/segment_13517.ts' for reading
+[in#0 @ 0000029516b0f340] Opening 'http://192.187.115.106:81/live/cctv4md/segment_13518.ts' for reading
+Input #0, hls, from 'http://74.91.26.218:82/live/cctv4hd.m3u8':
+  Duration: N/A, start: 39727.689411, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720, 25 fps, 25 tbr, 90k tbn, start 39727.689411
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 39727.689411
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/74.91.26.218_82.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 0000029518f2e040] The specified filename 'audit_frames/74.91.26.218_82.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0000029518f2e040] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0000029516be4e80] video:9KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=4.0 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0418x elapsed=0:00:00.95    
+--enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 000001e100c35880] Opening 'http://192.151.152.210:82/live/cctv9md/segment_13514.ts' for reading
+[in#0 @ 000001e100c35880] Opening 'http://192.151.152.210:82/live/cctv9md/segment_13515.ts' for reading
+Input #0, hls, from 'http://192.151.150.154/live/cctv9hd.m3u8':
+  Duration: N/A, start: 39697.687933, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1280x720, 25 fps, 25 tbr, 90k tbn, start 39697.687933
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 39697.687933
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/192.151.150.154.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, progressive), 320x180, q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 000001e10271cfc0] The specified filename 'audit_frames/192.151.150.154.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 000001e10271cfc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 000001e10271b240] video:8KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=3.3 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0604x elapsed=0:00:00.66    
+--enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9126.ts' for reading
+[http @ 0000020a57621980] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670099 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670099 of playlist 0 failed too many times, skipping
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9127.ts' for reading
+[http @ 0000020a55acc300] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670100 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670100 of playlist 0 failed too many times, skipping
+[in#0 @ 0000020a559e0dc0] skipping 1 segments ahead, expired from playlists
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9129.ts' for reading
+[http @ 0000020a559e0080] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670102 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670102 of playlist 0 failed too many times, skipping
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9130.ts' for reading
+[http @ 0000020a559e0080] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670103 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670103 of playlist 0 failed too many times, skipping
+[http @ 0000020a55ac5f40] Opening 'http://120.76.248.139/live/bfgd/4200000473.m3u8' for reading
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9131.ts' for reading
+[http @ 0000020a57621980] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670104 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670104 of playlist 0 failed too many times, skipping
+[http @ 0000020a55ac5f40] Opening 'http://120.76.248.139/live/bfgd/4200000473.m3u8' for reading
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9132.ts' for reading
+[http @ 0000020a559e0080] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670105 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670105 of playlist 0 failed too many times, skipping
+[http @ 0000020a55ac5f40] Opening 'http://120.76.248.139/live/bfgd/4200000473.m3u8' for reading
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9133.ts' for reading
+[http @ 0000020a559e0080] Error reading HTTP response: End of file
+[in#0 @ 0000020a559e0dc0] Failed to open segment 19670106 of playlist 0
+[in#0 @ 0000020a559e0dc0] Segment 19670106 of playlist 0 failed too many times, skipping
+[http @ 0000020a55ac5f40] Opening 'http://120.76.248.139/live/bfgd/4200000473.m3u8' for reading
+[in#0 @ 0000020a559e0dc0] Opening 'http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=hls&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000473&redirect=1&hls_segment=4_0_1_2_3_4_9134.ts' for reading
+00194_0.smil.20261011001500.ts,0,8441,6,0,110299224,110299224,6495400,1791649002068167' for reading
+Output #0, image2, to 'audit_frames/119.39.9.8_9901.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, top first), 320x180 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 000002067160ed40] The specified filename 'audit_frames/119.39.9.8_9901.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 000002067160ed40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 0000020670b29580] video:9KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.6 q=4.7 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.023x elapsed=0:00:01.74    
+_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 00000171d3100140] Opening 'http://112.27.5.218:9901/tsfile/live/live_111_1_18980701.ts?key=txiptv&key2=18980701' for reading
+[in#0 @ 00000171d3100140] Opening 'http://112.27.5.218:9901/tsfile/live/live_111_1_18980702.ts?key=txiptv&key2=18980702' for reading
+ffmpeg version N-126889-gb139ba11d8-20260926 Copyright (c) 2000    Last message repeated 10 times
+Input #0, hls, from 'http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0':
+  Duration: N/A, start: 87359.575556, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Data: epg, start 87359.575556
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Video: mpeg2video (Main) ([2][0][0][0] / 0x0002), yuv420p(tv), 720x576 [SAR 16:15 DAR 4:3], 25 fps, 25 tbr, 90k tbn, start 87359.575556
+    Metadata:
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 15000000/0/0 buffer size: 1785856 vbv_delay: N/A
+  Stream #0:2[0x0](eng): Audio: mp2 ([4][0][0][0] / 0x0004), 48000 Hz, stereo, s16p, 224 kb/s, start 87359.575556
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:1 -> #0:0 (mpeg2video (native) -> mjpeg (native))
+[http @ 00000171d31eb280] Opening 'http://112.27.5.218:9901/tsfile/live/live_111_1_18980703.ts?key=txiptv&key2=18980703' for reading
+Output #0, image2, to 'audit_frames/112.27.5.218_9901.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, top first), 320x180 [SAR 3:4 DAR 4:3], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 00000171d4ce9480] The specified filename 'audit_frames/112.27.5.218_9901.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 00000171d4ce9480] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 00000171d4d0cac0] video:7KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=4.1 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0792x elapsed=0:00:00.50    
+--nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 000002024c57afc0] Opening 'http://218.84.12.186:8001/hls/main/SEG-20261011001342.ts' for reading
+ffmpeg version N-126889-gb139ba11d8-20260926 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gInput #0, hls, from 'http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd':
+  Duration: N/A, start: 88084.158522, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 88084.158522
+    Metadata:
+      variant_bitrate : 0
+  Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 88084.158522
+    Metadata:
+      variant_bitrate : 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Output #0, image2, to 'audit_frames/218.84.12.186_8001.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, bt709, progressive), 320x180 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 0
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 000002024ec9d040] The specified filename 'audit_frames/218.84.12.186_8001.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 000002024ec9d040] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 000002024c658880] video:3KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.0 q=2.5 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.0807x elapsed=0:00:00.49    
+-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20260926
+  libavutil      61.  8.100 / 61.  8.100
+  libavcodec     63. 14.100 / 63. 14.100
+  libavformat    63.  7.100 / 63.  7.100
+  libavdevice    63.  2.100 / 63.  2.100
+  libavfilter    12.  4.100 / 12.  4.100
+  libswscale     10.  2.100 / 10.  2.100
+  libswresample   7.  3.100 /  7.  3.100
+[in#0 @ 000001530cee8bc0] Opening 'http://222.128.55.152:9080/live/dwq.m3u8?hls_ctx=3766805w' for reading
+[in#0 @ 000001530cee8bc0] Opening 'http://222.128.55.152:9080/live/dwq-2024.ts' for reading
+[in#0 @ 000001530cee8bc0] Opening 'http://222.128.55.152:9080/live/dwq-2025.ts' for reading
+Input #0, hls, from 'http://222.128.55.152:9080/live/dwq.m3u8':
+  Duration: N/A, start: -26.198000, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 1
+  Stream #0:0[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start -26.198000
+    Metadata:
+      variant_bitrate : 1
+  Stream #0:1[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start -26.198000
+    Metadata:
+      variant_bitrate : 1
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> mjpeg (native))
+[h264 @ 000001530eaf5c80] error while decoding MB 97 30, bytestream -6
+[h264 @ 000001530eaf5c80] concealing 4512 DC, 4512 AC, 4512 MV errors in I frame
+[vist#0:1/h264 @ 000001530f44be00] [dec:h264 @ 000001530f63ee40] corrupt decoded frame
+Output #0, image2, to 'audit_frames/222.128.55.152_9080.jpg':
+  Metadata:
+    encoder         : Lavf63.7.100
+  Stream #0:0: Video: mjpeg, yuv420p(pc, top first), 320x180 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc63.14.100 mjpeg
+      variant_bitrate : 1
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[image2 @ 000001530eb02940] The specified filename 'audit_frames/222.128.55.152_9080.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 000001530eb02940] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+[out#0/image2 @ 000001530eb03a00] video:6KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    1 fps=0.5 q=2.6 Lsize=N/A time=00:00:00.04 bitrate=N/A dup=1 drop=0 speed=0.021x elapsed=0:00:01.90    

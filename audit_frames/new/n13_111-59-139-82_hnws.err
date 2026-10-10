@@ -1,0 +1,80 @@
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[mp2 @ 0000024592007b00] Header missing
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[NULL @ 0000024591f51ac0] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] non-existing PPS 0 referenced
+[h264 @ 0000024590213180] no frame!
+[h264 @ 0000024590213180] mmco: unref short failure
+    Last message repeated 1 times
+[h264 @ 0000024590213180] number of reference frames (0+4) exceeds max (3; probably corrupt input), discarding one
+[h264 @ 00000245925f00c0] reference picture missing during reorder
+[h264 @ 00000245925f00c0] Missing reference picture, default is 4
+[h264 @ 00000245925f00c0] mmco: unref short failure
+[h264 @ 00000245925f00c0] reference picture missing during reorder
+[h264 @ 00000245925f00c0] Missing reference picture, default is 65548
+[h264 @ 00000245925f00c0] mmco: unref short failure
+    Last message repeated 1 times
