@@ -36,6 +36,17 @@ def channel_result_rejection(
     ):
         return "unreachable"
 
+    filter_resolution = (
+        config.open_filter_resolution
+        if filter_resolution is None
+        else filter_resolution
+    )
+    resolution = item.get("resolution")
+    # Checked before the supply bypass: a stream without a video track is
+    # unplayable regardless of relaxed thresholds.
+    if filter_resolution and not resolution:
+        return "filtered_resolution"
+
     supply = config.open_supply if supply is None else supply
     if supply:
         return None
@@ -44,15 +55,9 @@ def channel_result_rejection(
     min_speed = config.min_speed if min_speed is None else min_speed
     if resolution_speed_map is None:
         resolution_speed_map = config.resolution_speed_map
-    resolution = item.get("resolution")
     if filter_speed and speed < resolution_speed_map.get(resolution, min_speed):
         return "filtered_speed"
 
-    filter_resolution = (
-        config.open_filter_resolution
-        if filter_resolution is None
-        else filter_resolution
-    )
     if filter_resolution and resolution:
         min_resolution = (
             config.min_resolution_value

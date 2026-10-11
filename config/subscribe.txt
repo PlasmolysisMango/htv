@@ -9,8 +9,8 @@ https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u
 https://raw.githubusercontent.com/YanG-1989/m3u/main/Migu.m3u
 # vbskycn 双栈列表
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u
-# iptv-org 中国区
-https://iptv-org.github.io/iptv/countries/cn.m3u
+# iptv-org 中国区（改用 raw 地址以便走 CDN 镜像）
+https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
 # suxuang 聚合 / 移动 IPTV / 榴芒电视
 https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
 https://raw.githubusercontent.com/suxuang/myIPTV/main/%E7%A7%BB%E5%8A%A8IPTV.m3u
@@ -27,6 +27,8 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
 https://raw.githubusercontent.com/zbefine/iptv/main/iptv.m3u
 # zbds.top 公开列表
 https://live.zbds.top/tv/iptv4.txt
+# ssili126 每日更新聚合（含广东电信系单播，覆盖 CCTV-3/5/6/8 等稀缺频道）
+https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt
 
 
 

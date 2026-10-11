@@ -198,13 +198,23 @@ class ChannelQualityTests(unittest.TestCase):
             selected = [row for row in rows if row.get("selected_rank") is not None]
             self.assertEqual([row["url"] for row in selected], [fast["url"]])
 
-    def test_missing_resolution_is_allowed_when_measurement_is_reachable(self):
+    def test_audio_only_result_without_video_track_is_rejected(self):
         result = make_result(resolution=None)
 
         with self.quality_config():
-            self.assertTrue(is_valid_speed_result(result))
-            self.assertTrue(_is_valid(result))
-            self.assertEqual(self.sort_results(result), [result])
+            self.assertFalse(is_valid_speed_result(result))
+            self.assertFalse(_is_valid(result))
+            self.assertTrue(check_channel_need_frozen(result))
+            self.assertEqual(get_speed_test_status(result, False), "filtered_resolution")
+            self.assertEqual(self.sort_results(result), [])
+
+    def test_supply_mode_still_rejects_audio_only_results(self):
+        audio_only = make_result(speed=5.0, resolution=None)
+
+        with self.quality_config(supply=True):
+            self.assertFalse(is_valid_speed_result(audio_only))
+            self.assertFalse(_is_valid(audio_only))
+            self.assertEqual(self.sort_results(audio_only, supply=True), [])
 
     def test_supply_mode_bypasses_thresholds_but_not_reachability(self):
         fallback = make_result(speed=0.25, resolution="3840x2160")
